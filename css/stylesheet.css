@@ -1,0 +1,497 @@
+/* Op alles */
+* {
+    box-sizing: border-box;
+}
+
+/* Navigatiebalk */
+nav {
+    display: flex;
+    padding: 2vh 10vh 2vh 0vh;
+    border-bottom: 2px solid black;
+    justify-content: end;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    max-height: 10vh;
+}
+
+/* Logo */
+.logo {
+    height: 40px;
+    width: 200px;
+    margin-right: auto;
+    margin-left: 8vh;
+}
+
+/* Alle links in de navigatiebalk */
+.link {
+    padding: 2vh 2vh;
+    color: gray;
+    text-decoration: none;
+}
+
+/* Alle links in de navigatiebalk als je met je muis eroverheen gaat */
+.link:hover {
+    background-color: rgb(41, 39, 39);
+    color: white;
+    text-decoration: none;
+    border-radius: 1vh;
+}
+
+/* Zorgt ervoor dat er geen witte lijnen aan de zijkant van de website zitten */
+body {
+    margin: auto;
+}
+
+/* Homepage met de achtergrondimage */
+header {
+    padding: 25vh;
+    border-bottom: 2px solid black;
+    background-image: url('https://static.vecteezy.com/ti/gratis-fotos/p1/22975361-zomer-vakantie-tropisch-strand-met-blauw-lucht-en-zee-voor-ontspanning-panoramisch-strand-achtergrond-zomer-vakantie-met-mooi-natuur-zand-zonlicht-oceaan-water-met-generatief-ai-gratis-foto.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* h1 teksten */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* Het stukje tekst op de homepage */
+.description {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+/* Om de links naast elkaar te zetten door flex */
+.link2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* de 2 links op de homepage onder het stukje tekst */
+.link2 {
+    padding: 2vh 2vh;
+    background-color: rgb(41, 39, 39);
+    color: white;
+    text-decoration: none;
+    border-radius: 1vh;
+    border: 2px solid rgb(41, 39, 39);
+    margin-right: 2vh;
+}
+
+/* de 2 links op de homepage onder het stukje tekst als je met je muis eroverheen gaat */
+.link2:hover {
+    border: 2px solid rgb(41, 39, 39);
+    background-color: white;
+    color: rgb(41, 39, 39);
+}
+
+/* De vakantiebstemmingen en het formulier */
+main {
+    padding: 7vh 0vh 0vh 0vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* De vakantiebstemmingen achtergond */
+#vakantiebestemmingen {
+    background-color: white;
+    padding: 0vh;
+}
+
+/* Voor de plaatsen van de tekst: "Vakantiebestemmingen" */
+.section {
+    margin-bottom: 5vh;
+}
+
+/* Wordt gebruikt om de 3 cards naast elkaar te kunenen zetten dankzij flex */
+.locations {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10vh;
+}
+
+/* Geldt voor alle 3 de tags */
+.location1 {
+    border: 2px solid rgb(41, 39, 39);
+    border-radius: 1vh;
+    max-width: 300px;
+    max-height: auto;
+    overflow: hidden;
+
+    /* Zorgt ervoor dat de animatie er 0,5 secondes erover doet */
+    transition: all 0.5s ease-out;
+}
+
+/* Zorgt ervoor dat de card iets naar voren springt en groter wordt */
+/* En dat gebeurt dan als je met je muis eroverheen gaat */
+.location1:hover {
+    transform: scale(1.1);
+    box-shadow: -5px -5px 10px rgba(0 0 0 / 0.4);
+}
+
+/* h2 teksten */
+h2 {
+    text-align: center;
+}
+
+/* De starrating */
+.stars {
+    text-align: center;
+    font-size: 1rem;
+    color: gold;
+}
+
+/* De image grootte voor de 3 vakantiebestemmingen */
+.sightsee {
+    height: 200px;
+    width: 300px;
+    border-bottom: 2px solid black;
+}
+
+/* De beschrijvingen die bij de 3 vakantiebestemmmingen horen */
+.description2 {
+    margin: 3vh;
+    text-align: center;
+}
+
+/* De links die onderop staan bij elke vakantiebestemming */
+.link3 {
+    padding: 2vh 1vh;
+    background-color: rgb(41, 39, 39);
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgb(41, 39, 39);
+    display: flex;
+    justify-content: center;
+}
+
+/* De links die onderop staan bij elke vakantiebestemming als je met je muis eroverheen gaat */
+.link3:hover {
+    border: 2px solid rgb(41, 39, 39);
+    background-color: white;
+    color: rgb(41, 39, 39);
+    border-radius: 1vh;
+}
+
+/* Het gedeelte waar het formulier zich in bevindt */
+#boeken {
+    background-color: rgb(255, 246, 190);
+    padding: 7vh 0vh 10vh 0vh;
+}
+
+/* Het formulier */
+form {
+    margin-left: 50vh;
+    margin-right: 50vh;
+    text-align: start;
+}
+
+/* De grootte van de invulvelden */
+input[type="text"],
+input[type="email"],
+input[type="location"],
+input[type="date"],
+input[type="radio"],
+input[type="checkbox"],
+select {
+    padding: 1vh 10vh 1vh 1vh;
+    font-size: 1rem;
+}
+
+/* Om voornaam en achternaam, en om woonplaats en geboortedatum naast elkaar te zetten dankzij flex */
+.name,
+.woge {
+    display: flex;
+}
+
+/* Om het invulvakje en de "naam" ervan onder elkaar te zetten dankzij flex */
+.firstname,
+.lastname,
+.email,
+.place,
+.date,
+.choose,
+.messageinput,
+.register {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    font-weight: bold;
+}
+
+/* Om het bericht veld groter te maken */
+input[type="message"] {
+    padding: 0vh 10vh 15vh 1vh;
+    font-size: 1rem;
+}
+
+/* Dit wordt laten zien als het veld nog niet is ingevuld */
+.error {
+    color: red;
+    display: none;
+}
+
+/* Dit laat de rode tekst zien onder het veld */
+input:invalid,
+.error {
+    display: inline;
+}
+
+/* Zorgt ervoor dat de ja en nee niet bold worden */
+.radio {
+    font-weight: normal;
+}
+
+/* Grootte van de checkbox */
+.checkbox {
+    padding: 1vh;
+    margin-top: 1vh;
+}
+
+/* De plaatsing van de verstuur button */
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+/* De verstuur button */
+button {
+    text-align: center;
+    display: block;
+    padding: 2vh 30vh;
+    background-color: rgb(41, 39, 39);
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 1vh;
+}
+
+/* De verstuur button als je met je muis eroverheen gaat */
+button:hover {
+    background-color: white;
+    color: rgb(41, 39, 39);
+}
+
+/* Het gedeelte met het logo met erbij, links en socials */
+footer {
+    background-color: rgb(35, 37, 55);
+    padding: 5vh 8vh 5vh 8vh;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+/* Het logo, maar dan wat kleiner gemaakt */
+.logo2 {
+    height: 25px;
+    width: 120px;
+    margin-right: auto;
+}
+
+/* het copyright stukje tekst */
+.copyright {
+    color: white;
+    margin-right: auto;
+    margin-top: 2vh;
+}
+
+/* Zorgt ervoor dat de links wat uit elkaar staan dankzij flex */
+.cl {
+    display: flex;
+    justify-content: end;
+}
+
+/* De links die in de footer staan */
+.link4 {
+    color: white;
+    background-color: rgb(35, 37, 55);
+    text-align: center;
+    text-decoration: none;
+    margin: 0vh 3vh 0vh 3vh
+}
+
+/* De links die in de footer staan als je met je muis eroverheen gaat */
+.link4:hover {
+    background-color: rgb(35, 37, 55);
+    color: rgb(49, 146, 202);
+    border-radius: 0px;
+    text-decoration: none;
+}
+
+/* De social media logos grootte */
+.socials {
+    height: 3vh;
+    width: 4vh;
+    padding: 0vh 1vh 0vh 0vh;
+}
+
+/* responsive voor mobiel */
+@media (orientation: portrait) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-height: 45vh;
+        padding-left: 10vh;
+    }
+
+    .logo {
+        margin: 2vh 0;
+    }
+
+    .link {
+        margin: 1vh 0;
+        padding: 1vh 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding: 15vh 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        margin: 3vh 0;
+        padding: 0vh 2vh 0vh 2vh;
+    }
+
+    .link2-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link2 {
+        margin: 2vh 0;
+        padding: 1vh 2vh;
+    }
+
+    main {
+        padding: 5vh 2vh;
+    }
+
+    .locations {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location1 {
+        margin: 0 0 5vh;
+        max-width: 100%;
+    }
+
+    .sightsee {
+        width: 100%;
+        height: auto;
+    }
+
+    .stars {
+        font-size: 1.5rem;
+    }
+
+    .description2 {
+        font-size: 1rem;
+        margin: 2vh 0;
+        padding: 0vh 2vh 0vh 2vh
+    }
+
+    .link3 {
+        padding: 1vh 2vh;
+        font-size: 1.3rem;
+    }
+
+    section {
+        padding: 5vh 0 7vh;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="location"],
+    input[type="date"],
+    input[type="radio"],
+    input[type="checkbox"],
+    select {
+        padding: 1vh 2vh;
+        font-size: 1rem;
+    }
+
+    .name,
+    .woge {
+        flex-direction: column;
+    }
+
+    .firstname,
+    .lastname,
+    .email,
+    .place,
+    .date,
+    .choose,
+    .messageinput,
+    .register {
+        margin: 2vh 0;
+    }
+
+    input[type="message"] {
+        padding: 0vh 10vh 15vh 1vh;
+        font-size: 1rem;
+    }
+
+    .checkbox {
+        margin: 1vh 0;
+    }
+
+    .register {
+        font-weight: normal;
+    }
+
+    .submit {
+        margin-top: 3vh;
+    }
+
+    button {
+        padding: 1vh 5vh;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 4vh 2vh;
+        text-align: start;
+    }
+
+    .logo2 {
+        margin: 2vh 0vh;
+        text-align: start;
+    }
+
+    .copyright {
+        margin: 2vh 0;
+    }
+
+    .cl {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .link4 {
+        margin: 1vh 0;
+        padding: 1vh 0;
+        font-size: 1rem;
+    }
+
+    .socials {
+        margin: 0 1vh;
+    }
+}

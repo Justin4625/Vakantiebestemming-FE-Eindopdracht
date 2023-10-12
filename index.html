@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Zorgt ervoor dat de site niet te klein is op mobiele apparaten -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+
+    <title>Eindopdracht Week 6</title>
+</head>
+
+<body>
+
+    <!-- Logo en Navigatiebalk met links -->
+    <nav>
+        <img class="logo" src="./images/logo.png">
+        <a class="link" href="#">Home</a>
+        <a class="link" href="#vakantiebestemmingen">Zie vakantiebestemmingen</a>
+        <a class="link" href="#boeken">Vakantie boeken</a>
+        <a class="link" href="#">Contact</a>
+        <a class="link" href="#">Account</a>
+    </nav>
+
+    <!-- Homepage met een background image -->
+    <header>
+        <h1>Ontdek hier je droom vakantie!</h1>
+        <div class="description">
+            <p>Ontdek en boek je perfecte vakantiebestemming op onze website! Blader door een breed scala aan
+                bestemmingen, vind de beste deals en reserveer je droomvakantie vandaag nog. Van tropische stranden tot
+                avontuurlijke trektochten, we hebben alles wat je nodig hebt om je volgende vakantie onvergetelijk te
+                maken!</p>
+        </div>
+
+        <!-- De 2 buttons -->
+        <div class="link2-container">
+            <a class="link2" href="#vakantiebestemmingen">Zie vakantiebestemmingen</a>
+            <a class="link2" href="#boeken">Vakantie boeken</a>
+        </div>
+    </header>
+
+    <!-- De Vakantiebestemmingen en het formulier -->
+    <main>
+        <section id="vakantiebestemmingen">
+        <div class="section">
+            <h1>Vakantiebestemmingen</h1>
+        </div>
+
+        <!-- Hawaii sectie -->
+        <div class="locations">
+            <div class="location1">
+                <img class="sightsee" src="./images/hawaii.jpeg">
+                <h2>Hawaii</h2>
+                <div class="stars">
+                    <p>★★★</p>
+                </div>
+                <div class="description2">
+                    <p>Hawaii, de parel van de Stille Oceaan, wacht op jouw ontdekking! Deze exotische archipel biedt
+                        een betoverende mix van adembenemende natuurlijke schoonheid, met weelderige regenwouden,
+                        majestueuze vulkanen en schitterende stranden. Laat je betoveren door de sprankelende
+                        azuurblauwe zeeën,
+                        verken historische locaties zoals Pearl Harbor en geniet van de traditionele Hawaiiaanse
+                        gastvrijheid.
+                        Hawaii biedt avontuurlijke activiteiten zoals surfen, snorkelen, evenals ontspanning
+                        op het strand en culinaire verwennerij en tropische gerechten. Ontdek de
+                        eilanden van Hawaii voor een onvergetelijke vakantie-ervaring!</p>
+                </div>
+                <a class="link3" href="#boeken">Vakantie boeken</a>
+            </div>
+
+            <!-- Bali sectie -->
+            <div class="location1">
+                <img class="sightsee" src="./images/bali.jpeg">
+                <h2>Bali</h2>
+                <div class="stars">
+                    <p>★★★★</p>
+                </div>
+                <div class="description2">
+                    <p>Verken het paradijs op aarde op Bali, het betoverende eiland van de goden! Bali verwelkomt je met
+                        weelderige groene rijstterrassen, exotische tempels, glinsterende stranden en een rijke
+                        culturele erfenis. Geniet van de betoverende zonsondergangen, proef de verrukkelijke Balinese
+                        keuken en verdwaal in de kleurrijke markten vol handgemaakte kunstwerken. Duik in de
+                        kristalheldere wateren, surf op de legendarische golven, of ontspan gewoon onder de schaduw van
+                        de wuivende palmbomen. Bali biedt een perfecte mix van avontuur en ontspanning, en staat garant
+                        voor onvergetelijke momenten. Laat Bali je hart stelen tijdens je volgende vakantie!</p>
+                </div>
+                <a class="link3" href="#boeken">Vakantie boeken</a>
+            </div>
+
+            <!-- New York sectie -->
+            <div class="location1">
+                <img class="sightsee" src="./images/newyork.jpeg">
+                <h2>New York</h2>
+                <div class="stars">
+                    <p>★★★★★</p>
+                </div>
+                <div class="description2">
+                    <p>New York City, de stad die nooit slaapt, wacht op jouw ontdekking! Verlies jezelf in de iconische
+                        skyline en struin door de bruisende straten. Bezoek wereldberoemde bezienswaardigheden zoals het
+                        Vrijheidsbeeld, Times Square en het
+                        Empire State Building. Geniet van wereldklasse kunst en cultuur in musea, proef heerlijke
+                        gerechten uit alle hoeken van de wereld en winkel tot je erbij
+                        neervalt op Fifth Avenue. Of je nu houdt van theater, muziek, mode, of gewoon het bruisende
+                        stadsleven, New York City heeft voor elk wat wils. Laat je inspireren door de stad die altijd in
+                        beweging is en maak herinneringen voor het leven in New York!</p>
+                </div>
+                <a class="link3" href="#boeken">Vakantie boeken</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Het formulier -->
+        <section id="boeken">
+            <h1>Vakantie boeken</h1>
+            <form action="bedankt.html">
+
+                <!-- Voornaam -->
+                <div class="name">
+                    <div class="firstname">
+                        <label for="firstname">Voornaam</label>
+                        <input required type="text" id="firstname" name="firstname" placeholder="Voornaam">
+                        <span class="error">Vul een voornaam in</span>
+                    </div>
+
+                    <!-- Achternaam -->
+                    <div class="lastname">
+                        <label for="lastname">Achternaam</label>
+                        <input required type="text" id="lastname" name="lastname" placeholder="Achternaam">
+                        <span class="error">Vul een achternaam in</span>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input required type="email" id="email" name="email" placeholder="Email">
+                    <span class="error">Vul een email adres in</span>
+                </div>
+
+                <div class="woge">
+
+                    <!-- Woonplaats -->
+                    <div class="place">
+                        <label for="location">Woonplaats</label>
+                        <input required type="location" id="location" name="location" placeholder="Woonplaats">
+                        <span class="error">Vul een woonplaats in</span>
+                    </div>
+
+                    <!-- Geboortedatum -->
+                    <div class="date">
+                        <label for="date">Geboortedatum</label>
+                        <input required type="date" id="date" name="date">
+                        <span class="error">Vul een geboortedatum in</span>
+                    </div>
+                </div>
+
+                <!-- Uitklapbare balk -->
+                <div class="choose">
+                    <label for="select">Kies Vakantiebestemming</label>
+                    <select required type="select" name="select" id="select">
+                        <option value="" selected disabled>Kies uw vakantiebestemming</option>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="bali">Bali</option>
+                        <option value="newyork">New York</option>
+                    </select>
+                </div>
+
+                <!-- Bericht -->
+                <div class="messageinput">
+                    <label for="message">Bericht</label>
+                    <input type="message" id="message" name="message">
+                </div>
+
+                <!-- Inschrijven voor nieuwsbrief -->
+                <div class="register">
+                    <div>Inschrijven voor nieuwsbrief?</div>
+                    <div class="radio">
+                        <input required type="radio" id="yes" name="yesno">
+                        <label for="yes">Ja</label>
+
+                        <input required type="radio" id="no" name="yesno">
+                        <label for="no">Nee</label>
+                    </div>
+                </div>
+
+                <!-- Checkbox algemene voorwaarden -->
+                <div class="checkbox">
+                    <input required type="checkbox" id="voorwaarden" name="voorwaarden">
+                    <label for="voorwaarden">Ik ga akkoord met de algemene voorwaarden</label>
+                </div>
+
+                <!-- Submit button -->
+                <div class="submit">
+                    <button type="submit">Versturen</button>
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+
+    <!-- Het gedeelte met het logo met erbij, links en socials -->
+    <footer>
+
+        <!-- het logo -->
+        <img class="logo2" src="./images/logo.png">
+        <div class="cl">
+
+            <!-- Copyright tekst -->
+            <div class="copyright">
+                <p>Copyright 2023 Holiday</p>
+            </div>
+
+            <!-- De links -->
+            <a class="link4" href="">Privacy Policy</a>
+            <a class="link4" href="">Terms & Conditions</a>
+            <a class="link4" href="">Cookie Policy</a>
+            <a class="link4" href="">Contact</a>
+        </div>
+
+        <!-- De socialmedia logos -->
+        <div>
+            <img class="socials" src="./images/insta.webp">
+            <img class="socials" src="./images/twitter.png">
+            <img class="socials" src="./images/snap.png">
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
